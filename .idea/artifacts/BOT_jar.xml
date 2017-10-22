@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BOT:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BOT_jar</output-path>
+    <root id="archive" name="BOT.jar">
+      <element id="module-output" name="BOT" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/commons-codec-1.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/fluent-hc-4.5.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/gson-2.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/httpclient-4.5.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/httpclient-cache-4.5.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/httpclient-win-4.5.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/httpcore-4.4.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/httpmime-4.5.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/jna-4.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/jna-platform-4.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/org-apache-commons-codec.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/JAVA/JDK/commons-io-2.5-bin/commons-io-2.5/commons-io-2.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

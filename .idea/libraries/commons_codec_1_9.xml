@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="commons-codec-1.9">
+    <CLASSES>
+      <root url="jar://D:/JAVA/JDK/commons-codec-1.9.jar!/" />
+      <root url="jar://D:/JAVA/JDK/commons-logging-1.2.jar!/" />
+      <root url="jar://D:/JAVA/JDK/fluent-hc-4.5.3.jar!/" />
+      <root url="jar://D:/JAVA/JDK/gson-2.3.1.jar!/" />
+      <root url="jar://D:/JAVA/JDK/httpclient-4.5.3.jar!/" />
+      <root url="jar://D:/JAVA/JDK/httpclient-cache-4.5.3.jar!/" />
+      <root url="jar://D:/JAVA/JDK/httpclient-win-4.5.3.jar!/" />
+      <root url="jar://D:/JAVA/JDK/httpcore-4.4.6.jar!/" />
+      <root url="jar://D:/JAVA/JDK/httpmime-4.5.3.jar!/" />
+      <root url="jar://D:/JAVA/JDK/jna-4.1.0.jar!/" />
+      <root url="jar://D:/JAVA/JDK/jna-platform-4.1.0.jar!/" />
+      <root url="jar://D:/JAVA/JDK/org-apache-commons-codec.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
