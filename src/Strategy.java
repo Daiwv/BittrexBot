@@ -29,12 +29,17 @@ public class Strategy {
     private static final int amountCurrenciesToBuy = 5;                                 //Количество первых торгуемых пар монет из списка ранжируемых
     private static final double  fee = 0.0025;                                          //Комиссия биржи за сделку
     private static final double  profit = 0.01;                                         //Желаемый процент чистой прибыли с операции покупка/продажа
-    private static final int amountCurrenciesToPlay = 25;                               // Количество валют играемых в целом.
+    private static final int amountCurrenciesToPlay = 50;                               // Количество валют играемых в целом.
     private static Map<String, Double> m_minTradeSizes = new HashMap<String, Double>(); // Карта всех валют и их minTradeSize
     private static int countCurrencies = 0;                                             // На каждом проходе - количество играемых валют в кошельке на данный момент
     private static double minCurrencyBTCValue = 0.00005;                                //минимальная est.btc. value для валюты, чтобы считать ее у вас в кошельке играемой! а не подаренной системой просто так.
 
-    public JsonElement url2JSON (String url) throws IOException {
+    private static Map<String, Double> m_UserLastSells =  new HashMap<String, Double>();
+    private static Map<String, Double> m_UserLastBuys  =  new HashMap<String, Double>();
+
+    private static Map<String, Trade>  m_TradeHistory = new HashMap<String, Trade> ();
+
+    private JsonElement url2JSON (String url) throws IOException {
         String json = IOUtils.toString(new URL(url));
         JsonParser parser = new JsonParser();
         return parser.parse(json);
@@ -42,6 +47,9 @@ public class Strategy {
 
     public void run(){
         m_Bittrex = new Bittrex();
+
+        m_UserLastSells.clear();
+        m_UserLastBuys.clear();
 
         System.out.println("GET MARKEt SUM");
         m_SortedMapPairs = getMarketSums();                         //Список торгуемых монет, отсортированный по rank и задание m_minTradeSizes
@@ -60,11 +68,11 @@ public class Strategy {
 
     }
 
-    public Response getUserOpenOrders(){
+    private Response getUserOpenOrders(){
         return m_Bittrex.getOpenOrders();
     }
 
-    public void closeUserOpenOrders(){
+    private void closeUserOpenOrders(){
 
         Response response = getUserOpenOrders();                    //Запрос открытых ордеров
         JsonObject object = response.getJSON().getAsJsonObject();
@@ -80,7 +88,7 @@ public class Strategy {
 
     }
 
-    public Map <Double, Trade> getMarketSums() {
+    private Map <Double, Trade> getMarketSums() {
         JsonElement element = m_Bittrex.getMarketSummaries().getJSON();
         JsonObject object = element.getAsJsonObject();
         Boolean operation_result = object.get("success").getAsBoolean();
@@ -114,6 +122,7 @@ public class Strategy {
                 double rank = ((ask - bid) / bid) * baseVolume;
 
                 Trade trade = new Trade(marketName, bid, ask, baseVolume, minTradeSize);
+                m_minTradeSizes.put(marketName, minTradeSize);
 
 //            System.out.println( MarketName + " Bid:" + " " + Bid.getAsString() + " Ask: " + Ask.getAsString() + " BaseVolume: " + BaseVolume.getAsString() + " Rank = " + rank);
 
@@ -129,7 +138,7 @@ public class Strategy {
         return SortedMap;
     }
 
-    public Map<String, Double> getUserBalance(){
+    private Map<String, Double> getUserBalance(){
         Response response = m_Bittrex.getBalances();
         JsonObject object = response.getJSON().getAsJsonObject();
 
@@ -156,7 +165,7 @@ public class Strategy {
         return userBalance;
     }
 
-    public void sellCurrency(){
+    private void sellCurrency(){
 
         Response response = m_Bittrex.getOrderHistory();
         JsonObject object = response.getJSON().getAsJsonObject();
@@ -164,12 +173,25 @@ public class Strategy {
 
         Map <String, Double> lastPrices = new HashMap<>();
 
+        m_TradeHistory.clear();
+
         for (int i = 0; i < history.size(); i++ ){
             JsonObject order = history.get(i).getAsJsonObject();
 
             String orderName = order.get("Exchange").getAsString();
             Double orderPricePerUnit = order.get("PricePerUnit").getAsDouble();
-//            Double orderSum = order.get("Price").getAsDouble() + order.get("Commission").getAsDouble();
+
+            String orderType = order.get("OrderType").getAsString();
+            String Closed = order.get("Closed").getAsString();
+
+            if (i < 10) {
+                Trade trade = new Trade(orderName, 0.0f, 0.0f, 0.0f, 0.0f);
+                trade.setClosed(Closed);
+                trade.setorderType(orderType);
+                trade.setPricePerUnit(orderPricePerUnit);
+                m_TradeHistory.put(String.valueOf(i), trade);
+            }
+
             String OrderType = order.get("OrderType").getAsString();
             if (!lastPrices.containsKey(orderName) && (OrderType.contains("BUY"))){
                 lastPrices.put(orderName, orderPricePerUnit);
@@ -190,7 +212,7 @@ public class Strategy {
         }
     }
 
-    public void sellCurrency(String Currency, double price){
+    private void sellCurrency(String Currency, double price){
         String url = "https://bittrex.com/api/v1.1/market/selllimit?apikey="
                 + m_Bittrex.getApikey()
                 + "&market="
@@ -208,10 +230,11 @@ public class Strategy {
             System.out.print(Currency + " " + answer.getMessage());
         } else {
             System.out.print(Currency + " has been order to sell with price:" + price);
+            m_UserLastSells.put(Currency, price);
         }
     }
 
-    public double getCurAsk(String Currency){
+    private double getCurAsk(String Currency){
         Currency = "BTC-" + Currency;
         Response response = m_Bittrex.getMarketSummary(Currency);
         JsonObject object = response.getJSON().getAsJsonObject();
@@ -224,7 +247,7 @@ public class Strategy {
         return priceCurrentMinAsk;
     }
 
-    public double getCurBid(String Currency){
+    private double getCurBid(String Currency){
         Currency = "BTC-" + Currency;
         Response response = m_Bittrex.getMarketSummary(Currency);
         JsonObject object = response.getJSON().getAsJsonObject();
@@ -237,8 +260,7 @@ public class Strategy {
         return priceCurrentMaxBid;
     }
 
-
-    public double getTrueAsk(String Currency){
+    private double getTrueAsk(String Currency){
 
         double disstancePercent = 0.20;
         try {
@@ -271,48 +293,50 @@ public class Strategy {
         return -1;
     }
 
-    public double askBid(double ask, double bid){
+    private double askBid(double ask, double bid){
         System.out.println("Ask: " + ask + " Bid: " + bid);
         return ask;
     }
 
-    public double isGoodSell(String Currency, Map <String, Double> lastPrices){
+    private double isGoodSell(String Currency, Map <String, Double> lastPrices){
         double priceUserBuy = 1; /// текущий бид!
         try {
             priceUserBuy = lastPrices.get("BTC-" + Currency);
+
+            double priceCurrentMinAsk;
+
+            double minTradeSize = 0.00000001;
+
+            try {
+                minTradeSize = m_minTradeSizes.get("BTC-" + Currency);
+            }catch (Exception e){
+                minTradeSize = 0.00000002;
+            }
+
+            double ask = getTrueAsk(Currency);
+            if (ask == -1) {
+                System.out.println("Error get Ask!");
+                return - 1;
+            }
+            priceCurrentMinAsk = ask - minTradeSize;
+
+            double extra = fee * 2 + profit;
+
+            System.out.print(" Ask = " + ask + "; minTradeSize = " + minTradeSize + "; with price estimated: " + priceCurrentMinAsk + "; bought: " + (priceUserBuy + priceUserBuy * extra));
+            System.out.print("; profit = " + Math.round((((priceCurrentMinAsk  / (priceUserBuy + priceUserBuy * extra)) -1) * 100.0f)) + "% -> " + (priceCurrentMinAsk > (priceUserBuy + priceUserBuy * extra)) + " ")  ;
+
+            if (priceCurrentMinAsk > priceUserBuy*(1 + extra) && Math.round((((priceCurrentMinAsk  / (priceUserBuy + priceUserBuy * extra)) -1) * 100.0f)) < 25){
+                return priceCurrentMinAsk;
+            }
+            else
+                return -1;
         } catch (Exception e){
             System.out.println("Can't find last price!");
         }
-            double priceCurrentMinAsk;
-
-                double minTradeSize = 0.00000001;
-
-                try {
-                    minTradeSize = m_minTradeSizes.get("BTC-" + Currency);
-                }catch (Exception e){
-                    minTradeSize = 0.00000002;
-                }
-
-                double ask = getTrueAsk(Currency);
-                if (ask == -1) {
-                    System.out.println("Error get Ask!");
-                    return - 1;
-                }
-                priceCurrentMinAsk = ask - minTradeSize;
-
-                double extra = fee * 2 + profit;
-
-                System.out.print(" Ask = " + ask + "; minTradeSize = " + minTradeSize + "; with price estimated: " + priceCurrentMinAsk + "; bought: " + (priceUserBuy + priceUserBuy * extra));
-                System.out.print("; profit = " + Math.round((((priceCurrentMinAsk  / (priceUserBuy + priceUserBuy * extra)) -1) * 100.0f)) + "% -> " + (priceCurrentMinAsk > (priceUserBuy + priceUserBuy * extra)) + " ")  ;
-
-                if (priceCurrentMinAsk > priceUserBuy*(1 + extra) && Math.round((((priceCurrentMinAsk  / (priceUserBuy + priceUserBuy * extra)) -1) * 100.0f)) < 25){
-                    return priceCurrentMinAsk;
-                }
-                else
-                    return -1;
+        return -1;
     }
 
-    public void buy(){
+    private void buy(){
         Response responce = m_Bittrex.getBalance("BTC");
         JsonObject object = responce.getJSON().getAsJsonObject();
 
@@ -373,6 +397,7 @@ public class Strategy {
 
                         if (answer.isSuccessful()) {
                             Available -= minBuySum;
+                            m_UserLastBuys.put(entry.getValue().getName(), CurencyBid);
                         }
 
                         if (i > amountCurrenciesToBuy) return;
@@ -382,7 +407,7 @@ public class Strategy {
         }
     }
 
-    public Response url2Response(String url){
+    private Response url2Response(String url){
 
         Response response = new Response(false, "", "", "");
 
@@ -418,5 +443,46 @@ public class Strategy {
         }
 
         return response;
+    }
+
+    public String getLastUserBalance(){
+
+        String answer = "";
+        for (Map.Entry<String, Double> entry : m_UserBalance.entrySet()){
+            if (entry.getValue() > 0)
+                answer += entry.getKey() + " : " + entry.getValue().toString() + "\n";
+        }
+
+        return answer;
+    }
+
+    public String getLastUserSells(){
+
+        String answer = "Last User sells: \nCurrency : price\n";
+        for (Map.Entry<String, Double> entry : m_UserLastSells.entrySet()){
+            answer += entry.getKey() + " : " + entry.getValue().toString() + "\n";
+        }
+
+        return answer;
+    }
+
+    public String getLastUserBuy(){
+
+        String answer = "Last User buys: \nCurrency : price\n";
+        for (Map.Entry<String, Double> entry : m_UserLastBuys.entrySet()){
+            answer += entry.getKey() + " : " + entry.getValue().toString() + "\n";
+        }
+
+        return answer;
+    }
+
+    public String getTradeHistory() {
+
+        String answer = "User trade History: \nCurrency : OrderType : PricePerUnit\n";
+        for (Map.Entry<String, Trade> entry : m_TradeHistory.entrySet()){
+            answer += entry.getValue().getName() + " : " + entry.getValue().getorderType() + " : " + String.valueOf(entry.getValue().getPricePerUnit())+ " : " + entry.getValue().getClosed() + "\n";
+        }
+        return answer;
+
     }
 }

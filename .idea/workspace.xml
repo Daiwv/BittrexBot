@@ -17,74 +17,123 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/BTCBot$Main.coverage" NAME="Main Coverage Results" MODIFIED="1508437077637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BTCBot$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1508801774972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JsonPrimitive.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/JAVA/JDK/gson-2.3.1.jar!/com/google/gson/JsonPrimitive.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Strategy.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Strategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1662#1678#0" expanded="true" />
-                <element signature="e#4208#4223#0" expanded="true" />
-                <element signature="e#4361#4362#0" expanded="true" />
-                <element signature="e#4432#4433#0" expanded="true" />
-                <element signature="e#6101#6117#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bittrex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bittrex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3052">
-              <caret line="291" column="46" lean-forward="false" selection-start-line="291" selection-start-column="46" selection-end-line="291" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Trade.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Trade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1301#1302#0" expanded="true" />
-                <element signature="e#1330#1331#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6778907">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="JsonPrimitive.class" pinned="false" current-in-tab="false">
+            <entry file="jar://D:/JAVA/JDK/gson-2.3.1.jar!/com/google/gson/JsonPrimitive.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="731">
+                  <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="419">
+                  <caret line="47" column="62" lean-forward="false" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Strategy.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Strategy.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3846">
+                  <caret line="482" column="48" lean-forward="false" selection-start-line="482" selection-start-column="48" selection-end-line="482" selection-end-column="48" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1662#1678#0" expanded="true" />
+                    <element signature="e#2165#2181#0" expanded="true" />
+                    <element signature="e#2254#2270#0" expanded="true" />
+                    <element signature="e#2342#2357#0" expanded="true" />
+                    <element signature="method#url2JSON#0;class#Strategy#0" expanded="false" />
+                    <element signature="e#3545#3546#0" expanded="true" />
+                    <element signature="e#3593#3594#0" expanded="true" />
+                    <element signature="method#getMarketSums#0;class#Strategy#0" expanded="false" />
+                    <element signature="e#4545#4560#0" expanded="true" />
+                    <element signature="e#6502#6518#0" expanded="true" />
+                    <element signature="method#getCurAsk#0;class#Strategy#0" expanded="false" />
+                    <element signature="method#getCurBid#0;class#Strategy#0" expanded="false" />
+                    <element signature="method#getTrueAsk#0;class#Strategy#0" expanded="false" />
+                    <element signature="method#askBid#0;class#Strategy#0" expanded="false" />
+                    <element signature="method#url2Response#0;class#Strategy#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TelegramBot.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/TelegramBot.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-468">
+                  <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#3298#3299#0" expanded="true" />
+                    <element signature="e#3335#3336#0" expanded="true" />
+                    <element signature="e#3382#3383#0" expanded="true" />
+                    <element signature="e#3417#3418#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Trade.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Trade.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="78" column="27" lean-forward="false" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Strategy.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Strategy.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="321">
+                  <caret line="184" column="25" lean-forward="false" selection-start-line="184" selection-start-column="19" selection-end-line="184" selection-end-column="25" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1662#1678#0" expanded="true" />
+                    <element signature="e#2165#2181#0" expanded="true" />
+                    <element signature="e#2254#2270#0" expanded="true" />
+                    <element signature="e#2342#2357#0" expanded="true" />
+                    <element signature="method#url2JSON#0;class#Strategy#0" expanded="false" />
+                    <element signature="e#4545#4560#0" expanded="true" />
+                    <element signature="e#6502#6518#0" expanded="true" />
+                    <element signature="method#getCurAsk#0;class#Strategy#0" expanded="false" />
+                    <element signature="method#getCurBid#0;class#Strategy#0" expanded="false" />
+                    <element signature="method#getTrueAsk#0;class#Strategy#0" expanded="false" />
+                    <element signature="method#askBid#0;class#Strategy#0" expanded="false" />
+                    <element signature="method#url2Response#0;class#Strategy#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -96,7 +145,17 @@
       <find>mintrad</find>
       <find>getTrueAsk</find>
       <find>minBuySum</find>
+      <find>disstancePercent</find>
+      <find>try to</find>
+      <find>try t</find>
+      <find>entry</find>
+      <find>minTradeSize</find>
+      <find>m_tradeHistory</find>
+      <find>m_TradeHistory</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -106,18 +165,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/SimpleBot.java" />
         <option value="$PROJECT_DIR$/src/Trade.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/TelegramBot.java" />
         <option value="$PROJECT_DIR$/src/Strategy.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="484" />
     <option name="y" value="53" />
-    <option name="width" value="1400" />
+    <option name="width" value="1399" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -133,9 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,11 +215,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/BOT_jar" />
+    <property name="last_opened_file_path" value="D:/JAVA/JDK/telegrambots-3.4-jar-with-dependencies.jar!/" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -294,54 +356,36 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="484" y="53" width="1400" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35062006" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30965006" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18280347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35843053" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872748" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298872" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -385,31 +429,37 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Strategy.java</url>
+          <url>file://$PROJECT_DIR$/src/TelegramBot.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>46</line>
           <properties />
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TelegramBot.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Strategy.java</url>
-          <line>333</line>
+          <line>180</line>
           <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Strategy.java</url>
-          <line>315</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Strategy.java</url>
-          <line>147</line>
-          <properties />
-          <option name="timeStamp" value="38" />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="39" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -418,34 +468,12 @@
         <watch expression="url" language="JAVA" />
         <watch expression="m_SortedMapPairs" language="JAVA" />
         <watch expression="Balance" language="JAVA" />
+        <watch expression="m_minTradeSizes" language="JAVA" />
+        <watch expression="order" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Trade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/JAVA/JDK/gson-2.3.1.jar!/com/google/gson/JsonPrimitive.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
@@ -454,30 +482,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Bittrex.java">
+    <entry file="file://$PROJECT_DIR$/src/Bittrex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
-          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+        <state relative-caret-position="4250">
+          <caret line="291" column="46" lean-forward="false" selection-start-line="291" selection-start-column="46" selection-end-line="291" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4410#4411#0" expanded="true" />
+            <element signature="e#4523#4524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Strategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5168">
+          <caret line="313" column="18" lean-forward="false" selection-start-line="313" selection-start-column="18" selection-end-line="313" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1662#1678#0" expanded="true" />
+            <element signature="e#2165#2181#0" expanded="true" />
+            <element signature="e#2254#2270#0" expanded="true" />
+            <element signature="e#2342#2357#0" expanded="true" />
+            <element signature="method#url2JSON#0;class#Strategy#0" expanded="false" />
+            <element signature="e#3545#3546#0" expanded="true" />
+            <element signature="e#3593#3594#0" expanded="true" />
+            <element signature="method#getMarketSums#0;class#Strategy#0" expanded="false" />
+            <element signature="e#4545#4560#0" expanded="true" />
+            <element signature="e#6502#6518#0" expanded="true" />
+            <element signature="method#getCurAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getCurBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getTrueAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#askBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#url2Response#0;class#Strategy#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Strategy.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5100">
-          <caret line="302" column="46" lean-forward="true" selection-start-line="302" selection-start-column="46" selection-end-line="302" selection-end-column="46" />
+        <state relative-caret-position="136">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/EncryptionUtility.java">
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Trade.java" />
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Response.java" />
+    <entry file="jar://D:/JAVA/JDK/gson-2.3.1.jar!/com/google/gson/JsonPrimitive.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="952">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Bittrex.java" />
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Strategy.java" />
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/EncryptionUtility.java" />
     <entry file="jar://D:/JAVA/JDK/gson-2.3.1.jar!/com/google/gson/JsonElement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -492,46 +563,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Response.java" />
     <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/BittrexIterface.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.019/Strategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Trade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Bittrex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.019/Strategy.java" />
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Trade.java" />
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Bittrex.java" />
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Main.java" />
     <entry file="jar://D:/JAVA/JDK/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -540,14 +577,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Strategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="284" column="74" lean-forward="true" selection-start-line="284" selection-start-column="74" selection-end-line="284" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/roman/priiskalov/Strategy.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -562,8 +592,8 @@
           <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4674#4675#0" expanded="true" />
+            <element signature="e#4410#4411#0" expanded="true" />
+            <element signature="e#4523#4524#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -575,10 +605,20 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1662#1678#0" expanded="true" />
-            <element signature="e#4208#4223#0" expanded="true" />
-            <element signature="e#4361#4362#0" expanded="true" />
-            <element signature="e#4432#4433#0" expanded="true" />
-            <element signature="e#6101#6117#0" expanded="true" />
+            <element signature="e#2165#2181#0" expanded="true" />
+            <element signature="e#2254#2270#0" expanded="true" />
+            <element signature="e#2342#2357#0" expanded="true" />
+            <element signature="method#url2JSON#0;class#Strategy#0" expanded="false" />
+            <element signature="e#3545#3546#0" expanded="true" />
+            <element signature="e#3593#3594#0" expanded="true" />
+            <element signature="method#getMarketSums#0;class#Strategy#0" expanded="false" />
+            <element signature="e#4545#4560#0" expanded="true" />
+            <element signature="e#6502#6518#0" expanded="true" />
+            <element signature="method#getCurAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getCurBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getTrueAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#askBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#url2Response#0;class#Strategy#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -597,8 +637,8 @@
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4674#4675#0" expanded="true" />
+            <element signature="e#4410#4411#0" expanded="true" />
+            <element signature="e#4523#4524#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -610,10 +650,20 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1662#1678#0" expanded="true" />
-            <element signature="e#4208#4223#0" expanded="true" />
-            <element signature="e#4361#4362#0" expanded="true" />
-            <element signature="e#4432#4433#0" expanded="true" />
-            <element signature="e#6101#6117#0" expanded="true" />
+            <element signature="e#2165#2181#0" expanded="true" />
+            <element signature="e#2254#2270#0" expanded="true" />
+            <element signature="e#2342#2357#0" expanded="true" />
+            <element signature="method#url2JSON#0;class#Strategy#0" expanded="false" />
+            <element signature="e#3545#3546#0" expanded="true" />
+            <element signature="e#3593#3594#0" expanded="true" />
+            <element signature="method#getMarketSums#0;class#Strategy#0" expanded="false" />
+            <element signature="e#4545#4560#0" expanded="true" />
+            <element signature="e#6502#6518#0" expanded="true" />
+            <element signature="method#getCurAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getCurBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getTrueAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#askBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#url2Response#0;class#Strategy#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -633,10 +683,20 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1662#1678#0" expanded="true" />
-            <element signature="e#4208#4223#0" expanded="true" />
-            <element signature="e#4361#4362#0" expanded="true" />
-            <element signature="e#4432#4433#0" expanded="true" />
-            <element signature="e#6101#6117#0" expanded="true" />
+            <element signature="e#2165#2181#0" expanded="true" />
+            <element signature="e#2254#2270#0" expanded="true" />
+            <element signature="e#2342#2357#0" expanded="true" />
+            <element signature="method#url2JSON#0;class#Strategy#0" expanded="false" />
+            <element signature="e#3545#3546#0" expanded="true" />
+            <element signature="e#3593#3594#0" expanded="true" />
+            <element signature="method#getMarketSums#0;class#Strategy#0" expanded="false" />
+            <element signature="e#4545#4560#0" expanded="true" />
+            <element signature="e#6502#6518#0" expanded="true" />
+            <element signature="method#getCurAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getCurBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getTrueAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#askBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#url2Response#0;class#Strategy#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -645,56 +705,114 @@
     <entry file="file://$USER_HOME$/Desktop/priiskalov/Bittrex.java" />
     <entry file="file://$USER_HOME$/Desktop/priiskalov/Strategy.java" />
     <entry file="file://$USER_HOME$/Desktop/priiskalov/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Trade.java">
+    <entry file="file://$USER_HOME$/Desktop/SimpleBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="1" />
           <folding>
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JAVA/JDK/telegrambots-3.4-jar-with-dependencies.jar!/org/telegram/telegrambots/updatesreceivers/DefaultBotSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2091">
+          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JAVA/JDK/telegrambots-3.4-jar-with-dependencies.jar!/org/telegram/telegrambots/bots/AbsSender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="936" column="82" lean-forward="false" selection-start-line="936" selection-start-column="82" selection-end-line="936" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JAVA/JDK/telegrambots-3.4-jar-with-dependencies.jar!/org/telegram/telegrambots/api/objects/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="142" column="18" lean-forward="false" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="18" />
+          <folding>
+            <element signature="e#6070#6071#0" expanded="true" />
+            <element signature="e#6107#6108#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bittrex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3052">
-          <caret line="291" column="46" lean-forward="false" selection-start-line="291" selection-start-column="46" selection-end-line="291" selection-end-column="46" />
+        <state relative-caret-position="569">
+          <caret line="97" column="20" lean-forward="false" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4410#4411#0" expanded="true" />
+            <element signature="e#4523#4524#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/JAVA/JDK/gson-2.3.1.jar!/com/google/gson/JsonPrimitive.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
+        <state relative-caret-position="731">
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="78" column="27" lean-forward="false" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="47" column="62" lean-forward="false" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TelegramBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3298#3299#0" expanded="true" />
+            <element signature="e#3335#3336#0" expanded="true" />
+            <element signature="e#3382#3383#0" expanded="true" />
+            <element signature="e#3417#3418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Strategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="3846">
+          <caret line="482" column="48" lean-forward="false" selection-start-line="482" selection-start-column="48" selection-end-line="482" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1662#1678#0" expanded="true" />
-            <element signature="e#4208#4223#0" expanded="true" />
-            <element signature="e#4361#4362#0" expanded="true" />
-            <element signature="e#4432#4433#0" expanded="true" />
-            <element signature="e#6101#6117#0" expanded="true" />
+            <element signature="e#2165#2181#0" expanded="true" />
+            <element signature="e#2254#2270#0" expanded="true" />
+            <element signature="e#2342#2357#0" expanded="true" />
+            <element signature="method#url2JSON#0;class#Strategy#0" expanded="false" />
+            <element signature="e#3545#3546#0" expanded="true" />
+            <element signature="e#3593#3594#0" expanded="true" />
+            <element signature="method#getMarketSums#0;class#Strategy#0" expanded="false" />
+            <element signature="e#4545#4560#0" expanded="true" />
+            <element signature="e#6502#6518#0" expanded="true" />
+            <element signature="method#getCurAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getCurBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#getTrueAsk#0;class#Strategy#0" expanded="false" />
+            <element signature="method#askBid#0;class#Strategy#0" expanded="false" />
+            <element signature="method#url2Response#0;class#Strategy#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -778,7 +896,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>commons-codec-1.9</last-edited>
+          <last-edited>telegrambots-3.4-jar-with-dependencies</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

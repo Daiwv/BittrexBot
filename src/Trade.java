@@ -52,6 +52,36 @@ public class Trade {
     private double m_Rank;
     private double m_MinTradeSize;
 
+    private double m_PricePerUnit;
+    private String m_orderType;
+    private String m_Closed;
+
+    public void setPricePerUnit(double m_PricePerUnit) {
+        this.m_PricePerUnit = m_PricePerUnit;
+    }
+
+    public void setorderType(String m_orderType) {
+        this.m_orderType = m_orderType;
+    }
+
+    public void setClosed(String m_Closed) {
+        this.m_Closed = m_Closed;
+    }
+
+    public double getPricePerUnit() {
+        return m_PricePerUnit;
+    }
+
+    public String getorderType() {
+        return m_orderType;
+    }
+
+    public String getClosed() {
+        return m_Closed;
+    }
+
+
+
     public String getName() {
         return m_Name;
     }
